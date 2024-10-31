@@ -1,0 +1,16 @@
+{
+	"landingPage": "/wp-admin/options-general.php?page=screen-stay-awake",
+	"preferredVersions": { "php": "8.1", "wp": "6.6" },
+	"phpExtensionBundles": ["kitchen-sink"],
+	"steps": [
+		{ "step": "login", "username": "admin", "password": "password" },
+		{
+			"step": "installPlugin",
+			"pluginZipFile": {
+				"resource": "wordpress.org/plugins",
+				"slug": "screen-stay-awake"
+			},
+			"options": { "activate": true }
+		}
+	]
+}
